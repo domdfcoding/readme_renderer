@@ -56,9 +56,6 @@ setuptools.setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
     install_requires=["bleach>=2.1.0", "docutils>=0.13.1", "Pygments>=2.5.1"],
-    entry_points={
-        "distutils.commands": ["check = readme_renderer.integration.distutils:Check"],
-    },
     extras_require={"md": "cmarkgfm>=0.5.0,<0.6.0"},
     packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
 )
